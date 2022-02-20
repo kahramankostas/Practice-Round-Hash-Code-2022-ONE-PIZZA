@@ -20,11 +20,11 @@ Each client is OK with additional ingredients they neither like or dislike being
 
 
 ## Input
-* The first line contains one integer $ 1 \leqslant  C \leqslant {10}^{5}$ the number of potential clients.
-* The following $2XC$ lines describe the clients’ preferences in the following format:
+* The first line contains one integer 1≤C≤10^5  the number of potential clients.
+* The following 2XC lines describe the clients’ preferences in the following format:
 
-    - First line contains integer  $ 1 \leqslant  L \leqslant 5$, followed by $L$ names of ingredients a client likes, delimited by spaces.
-    - Second line contains integer  $ 0 \leqslant  D \leqslant 5$, followed by $D$ names of ingredients a client dislikes, delimited by spaces.
+    - First line contains integer  1≤L≤5, followed by L names of ingredients a client likes, delimited by spaces.
+    - Second line contains integer  0≤D≤5,, followed by D names of ingredients a client dislikes, delimited by spaces.
     
     
 Each ingredient name consists of between 1 and 15 ASCII characters. Each character is one of the lowercase letters (a-z) or a digit (0-9).
@@ -42,14 +42,14 @@ A solution scores one point for each client that will come to your pizzeria. A c
 <img src="./img/ornek.jpg" alt="drawing" style="width:800px;"/>
 
 
-In the Sample Input there are $3$ potential clients:
+In the Sample Input there are 3 potential clients:
 
-* The first client likes $2$ ingredients, cheese and peppers, and does not dislike anything.
+* The first client likes 2 ingredients, cheese and peppers, and does not dislike anything.
 * The second client likes only basil and dislikes only pineapple.
 * The third client likes mushrooms and tomatoes and dislikes only basil
 
 
-The picture below shows the preferences of $3$ potential clients.
+The picture below shows the preferences of 3 potential clients.
 <img src="./img/pizza-poll-examples.png" alt="drawing" style="width:800px;"/>
 
 
@@ -64,7 +64,7 @@ In this particular Sample Output, we choose to use 4 ingredients in the pizza: c
 
 
 
-This means a submission of this output would score $2$ points for this case, because two clients (the first and third ones) would like this pizza.
+This means a submission of this output would score 2 points for this case, because two clients (the first and third ones) would like this pizza.
 
 
 
