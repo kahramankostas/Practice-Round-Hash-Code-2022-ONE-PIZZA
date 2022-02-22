@@ -173,9 +173,9 @@ files_add
 
 # VERSION 1
 
-The first and simplest method that comes to mind is to bring together all the desired and unwanted materials in separate lists, and then remove the unwanted materials from the desired list.
+#### The first and simplest method that comes to mind is to bring together all the desired and unwanted materials in separate lists, and then remove the unwanted materials from the desired list.
 
-This method has been followed in version 1.
+#### This method has been followed in version 1.
 
 
 ```python
