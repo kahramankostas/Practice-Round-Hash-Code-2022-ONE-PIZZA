@@ -64,10 +64,6 @@ In this particular Sample Output, we choose to use 4 ingredients in the pizza: c
 
 
 This means a submission of this output would score 2 points for this case, because two clients (the first and third ones) would like this pizza.
-<<<<<<< HEAD
-
-=======
->>>>>>> 4f1089b2eea5d4cb18f02d1e88a3ad69e91e573a
 
 <center><h1>Solutions</h1></center>
 
