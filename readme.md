@@ -1,3 +1,4 @@
+
 # Practice Round - Hash Code 2022
 
 # One Pizza
@@ -68,6 +69,8 @@ This means a submission of this output would score 2 points for this case, becau
 <center><h1>Solutions</h1></center>
 
 
+
+
 ```python
 import os
 ```
@@ -106,6 +109,7 @@ files_add=find_the_way('./input/','.txt')
 ```python
 def evaluate(outputfolder):
     total=0
+    flag=0
     for myfile in files_add:
         like=[]
         dislike=[]
@@ -122,28 +126,23 @@ def evaluate(outputfolder):
                 if line=="":break
                 if counter!=0:
                     line=line.replace("\n","")
-                    #print(line,counter)
                     line=line.split(" ")
-
-                    if counter%2==0:
+                        
+                        
+                    if counter%2!=0:
+                        temp1=1
                         for i in line[1:]:
-                            if i not in dislike:
-                                dislike.append(i)
-                    else:
-                        flag=1
-                        for i in line[1:]:
-                            if i not in like:
-                                like.append(i)
-                            
-                            
                             if i not in output:
-                                flag=0
-                            if i in dislike:
-                                flag=0
-
-
-                        person+=flag
-
+                                temp1=0
+                                
+                    if counter%2==0:
+                        temp2=1
+                        for i in line[1:]:
+                            if i in output:
+                                temp2=0  
+                        
+                        person+=(temp1 and temp2)                                 
+                
                 counter+=1
         print('%-15s %-30s %-10s %-10s' % ("File name: ",str(myfile)," score:",  str(person) ))
             
@@ -173,9 +172,9 @@ files_add
 
 # VERSION 1
 
-#### The first and simplest method that comes to mind is to bring together all the desired and unwanted materials in separate lists, and then remove the unwanted materials from the desired list.
+The first and simplest method that comes to mind is to bring together all the desired and unwanted materials in separate lists, and then remove the unwanted materials from the desired list.
 
-#### This method has been followed in version 1.
+This method has been followed in version 1.
 
 
 ```python
@@ -307,10 +306,10 @@ evaluate(outputfolder)
 
     File name:      ./input/a_an_example.in.txt     score:    2         
     File name:      ./input/b_basic.in.txt          score:    5         
-    File name:      ./input/c_coarse.in.txt         score:    5         
-    File name:      ./input/d_difficult.in.txt      score:    1487      
-    File name:      ./input/e_elaborate.in.txt      score:    665       
-    Total score: 2164
+    File name:      ./input/c_coarse.in.txt         score:    4         
+    File name:      ./input/d_difficult.in.txt      score:    1697      
+    File name:      ./input/e_elaborate.in.txt      score:    799       
+    Total score: 2507
     
 
 # VERSION 3
@@ -393,8 +392,8 @@ evaluate(outputfolder)
 
     File name:      ./input/a_an_example.in.txt     score:    2         
     File name:      ./input/b_basic.in.txt          score:    5         
-    File name:      ./input/c_coarse.in.txt         score:    5         
-    File name:      ./input/d_difficult.in.txt      score:    1577      
-    File name:      ./input/e_elaborate.in.txt      score:    1426      
-    Total score: 3015
+    File name:      ./input/c_coarse.in.txt         score:    4         
+    File name:      ./input/d_difficult.in.txt      score:    1480      
+    File name:      ./input/e_elaborate.in.txt      score:    1247      
+    Total score: 2738
     
